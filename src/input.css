@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .page__wrapper{
+        @apply container mx-auto lg:w-2/3 px-4;
+    }
+    .page__header, .page__content{
+        @apply p-4 lg:px-24 lg:py-12;
+    }
+    .page__title{
+        @apply font-bold text-4xl capitalize text-center;
+    }
+    .section__title{
+        @apply text-2xl font-bold;
+    }
+    .section__sub__title{
+        @apply text-xl leading-8 font-bold;
+    }
+    p{
+        @apply text-sm my-3;
+    }
+    a{
+        @apply text-[#00f] text-sm hover:text-black underline font-bold;
+    }
+}
